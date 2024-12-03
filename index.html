@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claim Your $750 Gift Card</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #ff7f50, #ff6347);
+      color: #fff;
+      text-align: center;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+    .menu-btn {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #fff;
+    }
+    .menu-btn:hover {
+      color: #ddd;
+    }
+    .header img {
+      width: 100%;
+      border-radius: 10px;
+      animation: bounce 1.5s infinite;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+    .claim-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #ff4500;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    .claim-btn:hover {
+      background: #ff6347;
+    }
+    .countdown {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+    .popup {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      display: none;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Menu Button -->
+  <div class="menu-btn" onclick="window.location.href='https://cgiiejd.offrsmatch.com/s/6cdf15597b10a?track=llll';">☰</div>
+
+  <!-- Container -->
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <img src="https://via.placeholder.com/400x200" alt="Gift Card">
+    </div>
+
+    <!-- Claim Button -->
+    <button class="claim-btn" onclick="window.location.href='https://cgiiejd.offrsmatch.com/s/6cdf15597b10a?track=llll';">Claim Now</button>
+
+    <!-- Countdown -->
+    <div class="countdown" id="countdown">Offer Ends in: 00:10:00</div>
+
+    <!-- Offer Description -->
+    <div class="footer">
+      <p>Don't miss out! Get your $750 Gift Card now and enjoy exclusive benefits.</p>
+      <p>Over 4,578 people have already claimed this offer!</p>
+    </div>
+  </div>
+
+  <!-- Popup Notification -->
+  <div class="popup" id="popup">🔔 Congratulations! Someone just claimed their $750 Gift Card!</div>
+
+  <!-- JavaScript -->
+  <script>
+    // Countdown Timer
+    const countdown = document.getElementById('countdown');
+    let time = 600; // 10 minutes in seconds
+    setInterval(() => {
+      const minutes = Math.floor(time / 60);
+      const seconds = time % 60;
+      countdown.textContent = `Offer Ends in: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+      time--;
+    }, 1000);
+
+    // Popup Notification
+    const popup = document.getElementById('popup');
+    setInterval(() => {
+      popup.style.display = 'block';
+      setTimeout(() => {
+        popup.style.display = 'none';
+      }, 3000);
+    }, 10000);
+  </script>
+</body>
+</html>
